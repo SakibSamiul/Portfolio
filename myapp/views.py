@@ -20,3 +20,6 @@ def Services(request):
 def Service_details(request, pk):
     service_details = SERVICE.objects.get(pk=pk)
     return render(request, 'service-details.html', { 'service_details':service_details})
+
+def Portfolio(request):
+    return render(request, 'portfolio.html')
