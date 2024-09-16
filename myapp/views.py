@@ -12,3 +12,6 @@ def About(request):
 
 def Resume(request):
     return render(request, 'resume.html')
+
+def Services(request):
+    return render(request, 'services.html')
