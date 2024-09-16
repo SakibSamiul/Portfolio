@@ -9,3 +9,6 @@ def Index(request):
 def About(request):
     about = ABOUT.objects.get()
     return render(request, 'about.html', {'about':about})
+
+def Resume(request):
+    return render(request, 'resume.html')
