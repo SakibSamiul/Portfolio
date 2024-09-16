@@ -26,3 +26,6 @@ def Portfolio(request):
 
 def Portfolio_details(request):
     return render(request, 'portfolio-details.html')
+
+def Contact(request):
+    return render(request, 'contact.html')
