@@ -26,8 +26,10 @@ class SERVICE(models.Model):
     service_description = models.CharField(max_length=500)    
     image = models.ImageField(upload_to='SERVICE/', blank=True, null=True)
     
+
     def __str__(self):
         return self.service_title
+    
 
 class CONTACT(models.Model):
     name = models.CharField(max_length=100)
