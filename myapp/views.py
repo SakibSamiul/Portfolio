@@ -7,5 +7,5 @@ def Index(request):
     return render(request, 'index.html')
 
 def About(request):
-    # about = ABOUT.objects.get()
-    return render(request, 'about.html')
+    about = ABOUT.objects.get()
+    return render(request, 'about.html', {'about':about})
