@@ -23,3 +23,6 @@ def Service_details(request, pk):
 
 def Portfolio(request):
     return render(request, 'portfolio.html')
+
+def Portfolio_details(request):
+    return render(request, 'portfolio-details.html')
