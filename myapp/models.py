@@ -7,7 +7,7 @@ class ABOUT(models.Model):
     short_description = models.CharField(max_length=300)
     birthday = models.DateField()
     website = models.URLField()
-    phone = models.IntegerField(max_length=15)
+    phone = models.IntegerField()
     city = models.CharField(max_length=100)
     age = models.IntegerField()
     degree = models.CharField(max_length=100)
@@ -19,3 +19,12 @@ class SOCIAL(models.Model):
 
     def __str__(self):
         return self.social_icon
+    
+class SERVICE(models.Model):
+    service_icon = models.CharField(max_length=100)
+    service_title = models.CharField(max_length=100)
+    service_description = models.CharField(max_length=500)    
+    image = models.ImageField(upload_to='SERVICE/', blank=True, null=True)
+    
+    def __str__(self):
+        return self.service_title
