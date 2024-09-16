@@ -15,3 +15,6 @@ def Resume(request):
 
 def Services(request):
     return render(request, 'services.html')
+
+def Service_details(request):
+    return render(request, 'service-details.html')
